@@ -334,6 +334,8 @@ input.form-control {
     #rectangle-bottom {
         width: 18rem;
     }
-
+    #remember-forgot-area  label, a{
+        font-size: 16px !important;
+    }
 
 }
