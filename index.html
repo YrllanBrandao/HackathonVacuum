@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UT=-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Hackaton 2 - Vacuum</title>
@@ -34,13 +34,13 @@
            
             <form  method="post"  class="form-control d-flex flex-column" id="form-login">
                 <label  class="form-label" for="email">E-mail</label>
-                <input type="email" name="email" id="email" class="form-control" value="vacuum@gmail.com">
+                <input type="email" name="email" id="email" class="form-control" value="vacuum@gmail.com" required placeholder="E.g. vacuum@gmail.com" title="E-mail inválido, insira seu melhor e-mail" pattern="^[a-zA-Z0-9]{8,25}@[a-zA-Z0-9]{1,253}\.[a-zA-Z0-9]{2,63}$">
                 <label class="form-label" for="password">Senha</label>
-                <input type="password" name="password" id="password" class="form-control">
+                <input type="password" name="password" id="password" class="form-control"  required placeholder="Sua senha" title="Insira sua senha(mín. 8 caracteres)" pattern="^\w{8,}$">
 
                 <div class="d-flex justify-content-between ">
-                    <div class="col text-keep"> <label for="remember-me" class="fs-6"><input type="checkbox" name="rememberMe" id="remember-me"> Lembrar de mim</label></div>
-                    <div class="col fs-6 text-keep"> <a href="" class="color-secondary ">Esqueceu sua senha?</a></div>
+                    <div class="col text-keep"> <label for="remember-me" class="fs-5"><input type="checkbox" name="rememberMe" id="remember-me"> Lembrar de mim</label></div>
+                    <div class="col fs-5 text-keep"> <a href="" class="color-secondary ">Esqueceu sua senha?</a></div>
                 </div>
 
                 <button type="submit" class="btn bg-main color-light fw-regular font-ledge fs-5">Entrar</button>
@@ -51,5 +51,6 @@
             </p>
         </aside>
     </main>
+    <script src="./src/javascript/main.js"></script>
 </body>
 </html>
