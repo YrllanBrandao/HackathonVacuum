@@ -8,26 +8,29 @@
 </head>
 <body>
     <main class="container">
-        <div id="left-side" class="bg-main d-flex align-items-center justify-content-center">
+        <div id="left-side" class="bg-main align-items-center justify-content-center desktop-only" >
             <div id="logo-element" class="d-flex flex-column align-items-center">
-                <p class=" fs-3 fw-2 d-flex justify-content-end  container-fluid">HACKATON <span class="fw-bolder">VACUUM</span> | 2º EDIÇÃO.</p>
-                <img src="./src/images/rectangle_top.svg" id="rectangle-top"  alt="rectangle top" class="container-fluid">
+                <p class=" fs-3  d-flex flex-column align-items-end container-fluid">
+                    <h3 class="fs-3 ms-3 text-end fw-2">HACKATON <span class="fw-bolder">VACUUM</span> | 2º EDIÇÃO.</h3>
+                    <img src="./src/images/rectangle_top.svg" id="rectangle-top"   alt="rectangle top" class="container-fluid">
+                </p>
+                
                 <img src="./src/images/vacuum_logo.png" id="brand" alt="Logo vacuum">
                 <p class="fs-2 d-flex flex-column align-items-center">
-                    <span class="ms-3">DISCORD.GG/VACUUM</span>
+                    <h4 class="ms-3 fs-2">DISCORD.GG/VACUUM</h4>
                     <img src="./src/images/rectangle_bottom.svg" id="rectangle-bottom" alt="rectangle bottom">
                 </p>
                 
             </div>
         </div>
         <aside  id="right-side" class="d-flex flex-column justify-content-start align-items-center gap-1">
-            <div id="ellipse-element">
+            <div id="ellipse-element" class="desktop-only">
                 <img src="./src/images/ellipse_top.svg" alt="ellipse  superior" id="ellipse-top">
                 <img src="./src/images/ellipse_bottom.svg" alt="ellipse inferior" id="ellipse-bottom">
             </div>
 
             <h2 class="fs-5 font-coda fw-4">Bem Vindo.</h2>
-            <h1 class="fs-3 font-coda fw-3 mb-4">  Faça login na sua conta</h1>
+            <h1 class="fs-3 font-coda fw-3 mb-4 text-keep">  Faça login na sua conta</h1>
            
             <form  method="post"  class="form-control d-flex flex-column" id="form-login">
                 <label  class="form-label" for="email">E-mail</label>
@@ -36,14 +39,14 @@
                 <input type="password" name="password" id="password" class="form-control">
 
                 <div class="d-flex justify-content-between ">
-                    <div class="col"> <label for="remember-me" class="fs-6"><input type="checkbox" name="rememberMe" id="remember-me"> Lembrar de mim</label></div>
-                    <div class="col fs-6"> <a href="" class="color-secondary ">Esqueceu sua senha?</a></div>
+                    <div class="col text-keep"> <label for="remember-me" class="fs-6"><input type="checkbox" name="rememberMe" id="remember-me"> Lembrar de mim</label></div>
+                    <div class="col fs-6 text-keep"> <a href="" class="color-secondary ">Esqueceu sua senha?</a></div>
                 </div>
 
                 <button type="submit" class="btn bg-main color-light fw-regular font-ledge fs-5">Entrar</button>
             </form>
 
-            <p class="">
+            <p class="mb-1">
                 Não tem um conta? <a href="" class="color-secondary">Cadastre-se</a>
             </p>
         </aside>

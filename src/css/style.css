@@ -8,9 +8,17 @@
     --font-ledger: 'Ledger', serif;
     font-size: 16px;
 }
+.text-keep{
+    word-break: keep-all !important;
+    white-space: nowrap;
+}
+.desktop-only{
+    display: none;
+}
 .border{
     border:  1px solid red;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -35,19 +43,16 @@ a{
     height: 100vh;
     position: relative;
 }
-#left-side{
-    width: 60%;
-    font-family: var(--font-coda);
-}
+
 #right-side{
-    width: 40%;
+    width: 100%;
     font-family: var(--font-ledger);
     color: var(--colorPrimary);
-    padding-top: 15vh;
+    padding-top: 20vh;
 }
 
 #right-side > h1, h2{
-    width: 50%;
+    width: 90%;
     color: var(--colorPrimary);
 }
 #right-side > p{
@@ -56,15 +61,6 @@ a{
 
     margin-bottom: 2.5rem;
 }
-#logo-element{
-    width: 35%;
-    color: #FFFFFF;
-    font-family: var(--font-coda);
-}
-
-#rectangle-bottom{
-    width: 81%;
-}
 
 #ellipse-element, #ellipse-top, #ellipse-bottom{
     position: absolute;
@@ -72,7 +68,7 @@ a{
     right: 0;
 }
 #form-login{
-    width: 50%;
+    width: 90%;
 }
 /* Backgrounds */
 .bg-main{
@@ -126,31 +122,37 @@ a{
 .justify-content-start{
     justify-content:start;
 }
+.align-self-end{
+    align-self: flex-end;
+}
+.align-self-start{
+    align-self: flex-start;
+}
 
 /* margin */
 .mb-1{
-    margin-bottom: calc(1rem / 4px);
+    margin-bottom: 26px;
 }
 .mb-2{
-    margin-bottom: calc(1rem / 2px);
+    margin-bottom: 18px;
 }
 .mb-3{
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 .mb-4{
-    margin-bottom: calc(1rem + 2px);
+    margin-bottom: 14px;
 }
 .ms-1{
-    margin-left: calc(1rem / 4px);
+    margin-left: 20px;
 }
 .ms-2{
-    margin-left: calc(1rem / 2px);
+    margin-left: 18px;
 }
 .ms-3{
-    margin-left: 1rem;
+    margin-left: 16px;
 }
 .ms-4{
-    margin-left: calc(1rem + 2px);
+    margin-left: 14px;
 }
 /* form control */
 .form-label{
@@ -262,34 +264,79 @@ input.form-control{
     cursor: pointer;
 }
 
-/* general */
 
-/* extra small devices */
-@media (max-width: 575px) { 
-    
-}
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) { 
-   
- }
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {  
-
+    #form-login{
+        width: 60%;
+    }
+  
 }
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    #left-side{
+        width: 60%;
+        font-family: var(--font-coda);
+    }
+    #ellipse-element, #ellipse-top, #ellipse-bottom{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #form-login{
+        width: 50%;
+    }
+    #right-side > h1, h2{
+        width: 50%;
+    }
+
+    #logo-element{
+        width: 400px;
+        color: #FFFFFF;
+        font-family: var(--font-coda);
+    }
+    #rectangle-top{
+        width: 89%;
+    }
+    #rectangle-bottom{
+        width: 18rem;
+    }
+    #right-side{
+        width: 40%;
+        font-family: var(--font-ledger);
+        color: var(--colorPrimary);
+        padding-top: 15vh;
+    }
+    .desktop-only{
+        display: flex;
+    }
 
  }
 
  /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    #form-login{
+        width: 55%;
+    }
+    #right-side > h1, h2{
 
-}
-
- /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-
+        width: 55%;
+    }
+    #logo-element{
+        width: 400px;
+        color: #FFFFFF;
+        font-family: var(--font-coda);
+    }
+    #rectangle-top{
+        width: 23rem;
+    }
+    #rectangle-bottom{
+        width: 18rem;
+    }
+   
+    
  }
