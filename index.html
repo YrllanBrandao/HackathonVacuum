@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Hackaton 2 - Vacuum</title>
+</head>
+<body>
+    <main class="container">
+        <div id="left-side" class="bg-main d-flex align-items-center justify-content-center">
+            <div id="logo-element" class="d-flex flex-column align-items-center">
+                <p class=" fs-3 fw-2 d-flex justify-content-end  container-fluid">HACKATON <span class="fw-bolder">VACUUM</span> | 2º EDIÇÃO.</p>
+                <img src="./src/images/rectangle_top.svg" id="rectangle-top"  alt="rectangle top" class="container-fluid">
+                <img src="./src/images/vacuum_logo.png" id="brand" alt="Logo vacuum">
+                <p class="fs-2 d-flex flex-column align-items-center">
+                    <span class="ms-3">DISCORD.GG/VACUUM</span>
+                    <img src="./src/images/rectangle_bottom.svg" id="rectangle-bottom" alt="rectangle bottom">
+                </p>
+                
+            </div>
+        </div>
+        <aside  id="right-side" class="d-flex flex-column justify-content-start align-items-center gap-1">
+            <div id="ellipse-element">
+                <img src="./src/images/ellipse_top.svg" alt="ellipse  superior" id="ellipse-top">
+                <img src="./src/images/ellipse_bottom.svg" alt="ellipse inferior" id="ellipse-bottom">
+            </div>
+
+            <h2 class="fs-5 font-coda fw-4">Bem Vindo.</h2>
+            <h1 class="fs-3 font-coda fw-3 mb-4">  Faça login na sua conta</h1>
+           
+            <form  method="post"  class="form-control d-flex flex-column" id="form-login">
+                <label  class="form-label" for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" value="vacuum@gmail.com">
+                <label class="form-label" for="password">Senha</label>
+                <input type="password" name="password" id="password" class="form-control">
+
+                <div class="d-flex justify-content-between ">
+                    <div class="col"> <label for="remember-me" class="fs-6"><input type="checkbox" name="rememberMe" id="remember-me"> Lembrar de mim</label></div>
+                    <div class="col fs-6"> <a href="" class="color-secondary ">Esqueceu sua senha?</a></div>
+                </div>
+
+                <button type="submit" class="btn bg-main color-light fw-regular font-ledge fs-5">Entrar</button>
+            </form>
+
+            <p class="">
+                Não tem um conta? <a href="" class="color-secondary">Cadastre-se</a>
+            </p>
+        </aside>
+    </main>
+</body>
+</html>

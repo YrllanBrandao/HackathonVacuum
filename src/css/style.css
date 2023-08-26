@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
+:root{
+    --background-main: #0F0013;
+    --colorPrimary: #290A34;
+    --colorSecondary: #9B51E0;
+    --font-coda: 'Coda', cursive;
+    --font-ledger: 'Ledger', serif;
+    font-size: 16px;
+}
+.border{
+    border:  1px solid red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.container-fluid{
+    width: 100%;
+}
+#brand{
+    width: 180px;
+    aspect-ratio: 1 / 1;
+}
+#left-side, #right-side{ 
+    height: 100vh;
+    position: relative;
+}
+#left-side{
+    width: 60%;
+    font-family: var(--font-coda);
+}
+#right-side{
+    width: 40%;
+    font-family: var(--font-ledger);
+    color: var(--colorPrimary);
+    padding-top: 15vh;
+}
+
+#right-side > h1, h2{
+    width: 50%;
+    color: var(--colorPrimary);
+}
+#right-side > p{
+    position: absolute;
+    bottom: 0;
+
+    margin-bottom: 2.5rem;
+}
+#logo-element{
+    width: 35%;
+    color: #FFFFFF;
+    font-family: var(--font-coda);
+}
+
+#rectangle-bottom{
+    width: 81%;
+}
+
+#ellipse-element, #ellipse-top, #ellipse-bottom{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#form-login{
+    width: 50%;
+}
+/* Backgrounds */
+.bg-main{
+    background: var(--background-main);
+}
+.bg-light{
+    background: #FFFFFF;
+}
+/* colors */
+.color-light{
+    color: #FFFFFF;
+}
+.color-primary{
+    color: var(--colorPrimary);
+}
+.color-secondary{
+    color: var(--colorSecondary);
+}
+
+/* display */
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-start{
+    align-items: start;
+}
+.align-items-end{
+    align-items: end;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.justify-content-start{
+    justify-content:start;
+}
+
+/* margin */
+.mb-1{
+    margin-bottom: calc(1rem / 4px);
+}
+.mb-2{
+    margin-bottom: calc(1rem / 2px);
+}
+.mb-3{
+    margin-bottom: 1rem;
+}
+.mb-4{
+    margin-bottom: calc(1rem + 2px);
+}
+.ms-1{
+    margin-left: calc(1rem / 4px);
+}
+.ms-2{
+    margin-left: calc(1rem / 2px);
+}
+.ms-3{
+    margin-left: 1rem;
+}
+.ms-4{
+    margin-left: calc(1rem + 2px);
+}
+/* form control */
+.form-label{
+    font-family: var(--font-ledger);
+    font-size: 14;
+}
+form.form-control{
+    height: auto;
+    gap: calc(1rem/2);
+}
+input.form-control{
+    color: var(--colorPrimary) ;
+    border: 1.2px solid #E8E8E8;
+    font-family: var(--font-ledger);
+    font-size: .9rem;
+    font-weight: lighter;
+    outline: none;
+    padding: 1rem;
+}
+/* font sizes */
+
+.fs-1{
+    font-size: 2rem;
+}
+.fs-2{
+    font-size: calc(2rem - 4px);
+}
+.fs-3{
+    font-size:calc(2rem - 8px);
+}
+.fs-4{
+    font-size: calc(2rem - 12px);
+}
+.fs-5{
+    font-size: 1rem;
+}
+.fs-6{
+    font-size: calc(1rem - 2px);
+}
+.fs-7{
+    font-size: calc(1rem - 4);
+}
+
+/* fonts */
+.font-coda{
+    font-family: var(--font-coda);
+}
+.font-ledge{
+    font-family: var(--font-ledger);
+}
+
+/* font-weight */
+
+.fw-bold{
+    font-weight: bold;
+}
+.fw-bolder{
+    font-weight: bolder;
+}
+.fw-lighter{
+    font-weight: lighter;
+}
+.fw-1{
+    font-weight: 300;
+}
+.fw-2, .fw-regular{
+    font-weight: 400;
+}
+.fw-3{
+    font-weight: 500;
+}
+.fw-4{
+    font-weight: 600;
+}
+.fw-5{
+    font-weight: 700;
+}
+/* gaps */
+.gap-1{
+    gap: calc(1rem/2);
+}
+.gap-2{
+    gap: 1rem;
+}
+.gap-3{
+    gap: 1.2rem;
+}
+.gap-4{
+    gap: 1.5rem;
+}
+.gap-5{
+    gap: .2rem;
+}
+/* margins */
+
+/* buttons */
+.btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 100%;
+    height: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: var(--font-coda);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* general */
+
+/* extra small devices */
+@media (max-width: 575px) { 
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+   
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+ }
