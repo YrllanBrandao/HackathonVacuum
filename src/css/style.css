@@ -304,7 +304,10 @@ input.form-control {
     .desktop-only {
         display: flex;
     }
-
+    #remember-forgot-area  label, a{
+        font-size: 12px;
+    }
+    
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
